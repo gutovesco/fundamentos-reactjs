@@ -1,4 +1,4 @@
 const formatValue = (value: number): string =>
-  Intl.NumberFormat().format(value); // TODO
+  Intl.NumberFormat('pt-BR', { maximumSignificantDigits: 2 }).format(value); // TODO
 
 export default formatValue;
